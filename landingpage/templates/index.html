@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TRUSS</title>
+<!-- -----------------------------------------------------------------Font Links----------------------------------------------------------------- -->
+<!-- header -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+<!-- page1 -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<!-- page 2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<!-- PAGE 3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+<!-- page 5 -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+
+	<style>
+
+		/*-----------------------------------------------------------------general css-----------------------------------------------------------------*/
+
+		
+		* {
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background: #333;
+			color: black;
+			height: 100vh;
+			line-height: 1.6;
+			overflow: hidden;
+		}
+
+		.container {
+			width: 100%;
+			height: 100%;
+			/* CSS Smooth Scroll */
+			scroll-behavior: smooth;
+			scroll-snap-type: y mandatory;
+		}
+
+		.header{
+			font-family: 'Martel Sans', sans-serif;
+			z-index: 1;
+			position: fixed;
+			padding: 0.5rem;
+			top: 0;
+			width: 100vw;
+			height: 40px;
+			background-image: linear-gradient(to right, rgba(254, 194, 105, 0.9) , rgba(255, 245, 85, 0.9));
+			text-align: center;
+			overflow: hidden;
+		}
+		.header_link{
+			font-size: 0.938rem;
+			display: inline-block;
+			text-transform: uppercase;
+			margin: 0px;
+			padding: 0.5rem 1rem;
+			color: #0f1819;
+			opacity: 1;
+		}
+		.header_link:hover{
+			background-color: rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+		img#header1{
+			position: absolute;
+			left: 10px;
+		}
+
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 100vw;
+			height: 100vh;
+		 
+		  /* Scroll Snap */
+			scroll-snap-align: center;
+			background-image: linear-gradient(to right, #fec269 , #fff555);
+			background-size: cover;
+		}
+
+/*-----------------------------------------------------------------page 1 css-----------------------------------------------------------------*/
+		section#page1{
+
+		}
+		img#page1_image{
+			width: 70vw;
+			min-width: 350px;
+		}
+
+		.page1_text{
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
+			font-size: 3vw;
+			color: #0d3a5c;
+		}
+
+/*-----------------------------------------------------------------page 2 css-----------------------------------------------------------------*/
+		
+		section#page2{
+			position: relative;
+		}
+
+
+		.page2{
+			overflow: hidden;
+			position: absolute;
+			width: 100vw;
+			height: 80vh;
+		}
+
+		.page2_1{
+			text-align: center;
+			font-weight: bolder;
+			font-size: 1.1rem;
+			font-family: 'Quicksand', sans-serif;
+		}
+		@media screen and (min-width: 1024px) {
+		    .page2_1{
+			text-align: center;
+			font-weight: bolder;
+			font-size: 1.875rem;
+			font-family: 'Quicksand', sans-serif;
+			}
+		}
+
+		.page2_ii{
+			display: inline-block;
+		}
+
+		.page2_2{
+			position: relative;
+			font-family: 'Martel Sans', sans-serif;
+			text-align: center;
+			width: 250px;
+			display: inline-block;
+			overflow: hidden;
+			margin: 5vw;
+			font-size: 0.9rem;
+		}
+		@media screen and (min-width: 1024px) {
+		    .page2_2{
+			position: relative;
+			font-family: 'Martel Sans', sans-serif;
+			text-align: center;
+			width: 250px;
+			display: inline-block;
+			overflow: hidden;
+			margin: 5vw;
+		}
+		}
+
+		span#page2{
+			font-weight: bold;
+			text-shadow: none;
+		}
+
+		span{
+			font-weight: bolder;
+		}
+
+		p#font2_1{
+			font-size: 3.325rem;
+			text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
+		}
+
+		p#font2_2{
+			font-size: 2.217rem;
+		}
+
+		img#page2_1{
+			width: 80vw;
+			min-width: 370px;
+		}
+
+		img#page2_2{
+			width: 6vw;
+			min-width: 60px;
+		}
+
+		img#page2_3{
+			width: 8vw;
+			min-width: 70px;
+		}
+
+		img#page2_4{
+			width: 7vw;
+			min-width: 70px;
+		}
+		
+
+/*-----------------------------------------------------------------page 3 css-----------------------------------------------------------------*/
+
+		.page3_container{
+			position: relative;
+			top: 5vh;
+			height: 85vh;
+			overflow: hidden;
+		}
+
+		.page3{
+			display: inline-block;
+		}
+
+		.page3#gif{
+			border: 10px solid #0691f8;
+			border-radius: 5vh;
+			height: 50vw;
+			width: 50vw;
+			font-size: 2rem;
+			font-weight: bolder;
+			text-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', sans-serif;
+		}
+
+			@media screen and (min-width: 1024px) {
+		    .page3#gif{
+				border: 10px solid #0691f8;
+				border-radius: 10vh;
+				margin-right: 5vh;
+				height: 65vh;
+				width: 65vh;
+				font-size: 3.75rem;
+				font-weight: bolder;
+				text-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+				font-family: 'Mulish', sans-serif;
+			}
+		}
+
+		.page3#info{
+			width: 80vw;
+			font-size: 1rem;
+			text-align: left;
+			font-family: 'Quicksand', sans-serif;
+		}
+			@media screen and (min-width: 1024px) {
+		    .page3#info{
+				margin-left: 5vw;
+				height: 65vh;
+				width: 65vh;
+				font-size: 1.25rem;
+				text-align: left;
+				font-family: 'Quicksand', sans-serif;
+			}
+		}
+
+		li{
+			list-style-position: outside;
+		}
+
+		.page3#button3{
+			font-size: 1.2rem;
+			background-color: #2a6ef2;
+			color: whitesmoke;
+			border: 2px solid #2a6ef2;
+			border-radius: 30px;
+			padding: 0.5rem 2rem;
+			width: 60vw;
+			margin: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.page3#button3:hover{
+			background: whitesmoke;
+			color: black;
+		}
+
+		@media screen and (min-width: 1024px) {
+			.page3#button3{
+				font-size: 1.5rem;
+				background-color: #2a6ef2;
+				color: whitesmoke;
+				position: relative;
+				top: 5vh;
+				border: 2px solid #2a6ef2;
+				border-radius: 30px;
+				padding: 0.5rem 2rem;
+				width: 50vw;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			.page3#button3:hover{
+				background: whitesmoke;
+				color: black;
+			}
+		}
+
+		span#blue{
+			color: #2a6ef2;
+			font-size: 1.2rem;
+		}
+		span#black{
+			font-size: 1.2rem;
+		}
+
+		@media screen and (min-width: 768px) {
+		    span#blue{
+				color: #2a6ef2;
+				font-size: 1.938rem;
+			}
+			span#black{
+				font-size: 1.938rem;
+			}
+		}
+
+		a#page3_redirect{
+			color: #2a6ef2;
+		}
+		a#page3_redirect:hover{
+			color: black;
+		}
+
+		img#gif1{
+			width: 33vw;
+		}
+		@media screen and (min-width: 1024px) {
+			img#gif1{
+				width: 25vw;
+		}
+		}
+
+		/*-----------------------------------------------------------------page 4 css-----------------------------------------------------------------*/
+
+		img#page4{
+			position: relative;
+			transform: translate(0%, -50%);
+			top: 50%;
+			width: 200px;
+			min-width: 200px;
+		}
+
+		.page3#gif1{
+			
+			font-size: 2rem;
+			font-weight: bolder;
+			text-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', sans-serif;
+			overflow: hidden;
+		}
+
+		span#glow{
+			font-size: 2rem;
+			font-weight: bolder;
+			text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', sans-serif;
+		}
+
+		/*-----------------------------------------------------------------page 5 css-----------------------------------------------------------------*/
+
+
+		img#page5{
+			width: 100vw;
+		}
+		.page5{
+			position: relative;
+			font-size: 2.5rem;
+		}
+
+		span#page5{
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.688rem;
+		}
+		@media screen and (min-width: 1024px) {
+			span#page5{
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.1rem;
+		}
+		}
+
+		a#page5{
+			text-decoration: none;
+		}
+
+		.page5_button{
+			font-size: 1.2rem;
+			background-color: #2a6ef2;
+			color: whitesmoke;
+			border: 2px solid #2a6ef2;
+			border-radius: 30px;
+			padding: 0.5rem 2rem;
+			width: 60vw;
+			margin: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+		.page5_button:hover{
+			background: whitesmoke;
+			color: black;
+		}
+
+
+		@media screen and (min-width: 1024px) {
+
+			.page5_button{
+				font-family: 'Roboto', sans-serif;
+				color: whitesmoke;
+				border: 2px solid #2a6ef2;
+				border-radius: 30px;
+				background-color: #2a6ef2;
+				font-size: 1.5rem;
+				padding: 0.5rem 2rem;
+				width: 50vw;
+			}
+			.page5_button:hover{
+				background: whitesmoke;
+				color: black;
+			}
+		}
+
+		
+		/*-----------------------------------------------------------------page 6 css-----------------------------------------------------------------*/
+
+		.page6_container{
+			position: relative;
+			top: 5vh;
+			height: 85vh;
+		}
+
+		.page6{
+			display: inline-block;
+		}
+
+		.page6#gif{
+			border: 10px solid #0691f8;
+			border-radius: 5vh;
+			height: 50vw;
+			width: 50vw;
+			font-size: 2rem;
+			font-weight: bolder;
+			text-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', sans-serif;
+			overflow: hidden;
+		}
+		@media screen and (min-width: 1024px) {
+			.page6#gif{
+			border: 10px solid #0691f8;
+			border-radius: 10vh;
+			margin-right: 5vh;
+			height: 65vh;
+			width: 65vh;
+			font-size: 3.75rem;
+			font-weight: bolder;
+			text-shadow: -3px 3px 20px rgba(0, 0, 0, 0.5);
+			font-family: 'Mulish', sans-serif;
+			overflow: hidden;
+		}
+		}
+
+
+		.page6#info{
+			width: 80vw;
+			font-size: 1rem;
+			text-align: left;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+			@media screen and (min-width: 1024px) {
+		    .page6#info{
+				margin-left: 5vw;
+				height: 65vh;
+				width: 65vh;
+				font-size: 1.25rem;
+				text-align: left;
+				font-family: 'Quicksand', sans-serif;
+			}
+		}
+
+
+
+		.page6#button4{
+			font-size: 1.2rem;
+			background-color: #2a6ef2;
+			color: whitesmoke;
+			border: 2px solid #2a6ef2;
+			border-radius: 30px;
+			padding: 0.5rem 2rem;
+			width: 60vw;
+			margin: 20px;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.page6#button4:hover{
+			background: whitesmoke;
+			color: black;
+		}
+
+
+		@media screen and (min-width: 1024px) {
+
+			.page6#button4{
+				font-size: 1.5rem;
+				background-color: #2a6ef2;
+				color: whitesmoke;
+				position: relative;
+				top: 5vh;
+				border: 2px solid #2a6ef2;
+				border-radius: 30px;
+				padding: 0.5rem 2rem;
+				width: 50vw;
+				font-family: 'Roboto', sans-serif;
+			}
+
+			.page6#button4:hover{
+				background: whitesmoke;
+				color: black;
+			}
+		}
+
+
+
+
+		span#page6{
+			text-shadow: none;
+
+		}
+
+		img#image6{
+			width: 40vw;
+		}
+		@media screen and (min-width: 1024px) {
+			img#image6{
+			width: 30vw;
+		}
+		}
+
+		
+		
+
+		/*-----------------------------------------------------------------page 7 css-----------------------------------------------------------------*/
+
+																										/*SAME CSS AS PAGE 6 ONLY CONTENT IS DIFFERENT*/
+
+		/*-----------------------------------------------------------------page 8 css-----------------------------------------------------------------*/
+
+		img#page6{
+			width: 20vw;
+		}
+
+		/*-----------------------------------------------------------------page 9 css-----------------------------------------------------------------*/
+
+		img#image5_2{
+			position: relative;
+			top: 10px;
+			width: 100px;
+		}
+
+		.pricing_text{
+			font-family: 'Mulish', sans-serif;
+		}
+
+		section#page9{
+			position: relative;
+
+		}
+
+		.page9_1{
+			/*font-size: 3.5rem;*/
+			font-size: 5vw;
+			font-weight: bolder;
+			text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.7);
+			display: inline-block;
+
+
+		}
+
+		.pricing_box{
+			margin: 15px;
+			border: 3px solid black;
+			background-color: ghostwhite;
+			border-radius: 30px;
+			width: 250px;
+			height: 300px;
+			font-size: 3.125rem;
+			box-shadow: 10px 10px 0px dodgerblue;
+			display: inline-block;
+
+		}
+
+		.pricing_box#month_3{
+
+		}
+
+		.pricing_box#month_6{
+
+			width: 325px;
+			height: 375px;
+		}
+
+		.pricing_box#month_12{
+
+		}
+
+		input[type=number]{
+			position: relative;
+			font-size: 1.25rem;
+			border: 3px solid black;
+			background-color: ghostwhite;
+			padding: 10px 5px;
+			text-align: center;
+			border-radius: 15px;
+		}
+
+		input[type=number]#pricing_6{
+			top: 35px;
+		}
+		input[type=number]#pricing_3{
+			width: 180px;
+		}
+		input[type=number]#pricing_12{
+			width: 180px;
+		}
+
+		input[type=submit]{
+			font-size: 1.5rem;
+			background: black;
+			color: whitesmoke;
+			border: 2px solid black;
+			border-radius: 30px;
+			padding: 0.5rem 2rem;
+			font-family: 'Martel Sans', sans-serif;
+
+		}
+
+		input[type=submit]:hover{
+			background: whitesmoke;
+			color: black;
+			cursor: pointer;
+		}
+
+		span#page9_2{
+			/*font-size: 1.875rem;*/
+			font-size: 2.2vw;
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bolder;
+		}
+
+
+		/*-----------------------------------------------------------------page 9 css-----------------------------------------------------------------*/
+
+		img#page10{
+			width: 30vw;
+			min-width: 300px;
+		}
+
+
+
+	</style>
+</head>
+
+
+
+
+
+
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<a href="#page3"><div class="header_link" id="button1">LEARN</div></a>
+		<a href="#page6"><div class="header_link" id="button2">CONNECT</div></a>
+		<a href="#page7"><div class="header_link" id="button3">GROW</div></a>
+	</div>
+
+	<!-- page 1 -->
+
+	<section id="page1">
+
+    	<img src="{{url_for('static', filename='truss.png')}}" id="page1_image"><br>
+
+    	<div class="page1_text">
+
+    		One-stop solution to startup.
+    		
+    	</div>
+
+	</section>
+
+	<!-- page 2 -->
+
+	<section id="page2">
+		<div class="page2">
+			
+			<div class="page2_1">
+				<img src="{{url_for('static', filename='page2_1.png')}}" id="page2_1"><br>
+				Community made for student entrepreneurs to Learn, Connect and Grow. 
+			</div>
+
+			<br>
+
+			<div class="page2_ii">
+
+			<div class="page2_2">
+				<img src="{{url_for('static', filename='page2_2.png')}}" id="page2_2"><br>
+				<span id="page2">LEARN</span> ENTREPRENEURSHIP and related subjects to enhance knowledge.
+			</div>
+			<div class="page2_2">
+				<img src="{{url_for('static', filename='page2_3.png')}}" id="page2_3"><br>
+				<span id="page2">CONNECT</span>  with the perfect co-founder based on interests, skills, and location.
+			</div>
+			<div class="page2_2">
+				<img src="{{url_for('static', filename='page2_4.png')}}" id="page2_4"><br>
+				<span id="page2">GROW</span> with  mentors, investors and advisors to aid in your journey
+			</div>
+		
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- page 3 -->
+
+	<section id="page3">
+		
+		<div class="page3_container">
+							<div class="page3" id="gif">
+
+								LEARN<br>
+								<!-- <img src="{{url_for('static', filename='gif1.gif')}}" id="gif1"> -->
+								<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+								<lord-icon
+								    src="https://cdn.lordicon.com/dxoycpzg.json"
+								    trigger="morph"
+								    colors="primary:#f24c00,secondary:#646e78,tertiary:#4bb3fd,quaternary:#ebe6ef,quinary:#f9c9c0"
+								    state="morph"
+								    style="width:30vw;height:30vw">
+								</lord-icon>
+								
+							</div>
+
+							<div class="page3" id="info">
+
+								<ul>
+									<li><span id="blue">-Free for all.</span></li>
+									<li><span id="blue">-Foundational Knowledge:</span><br>Leadership, public speaking, finance, marketing etc.</li>
+									<li><span id="blue">-Offline</span> <span id="black">Community service projects:</span><br><a href="ngo_npo.html" id="page3_redirect">Join us if you are a part of an NGO/NPO</a></li>
+									<li><span id="blue">-Online</span> <span id="black">Resources:</span><br>Learn from recorded videos and documents.</li>
+								</ul>
+								
+							</div>
+
+							<a href="register.html">
+								<div class="page3" id="button3">
+								Register your interest now
+								</div>
+							</a>
+
+
+		</div>
+	</section>
+
+	<!-- page 4 -->
+
+	<section id="page4">
+
+		<div class="page3_container">
+							<div class="page3" id="info">
+
+								<div><span id="glow">Giant Leap</span></div>
+								<div><span id="black">India is home to more than 60 unicorns and is expected to host as many as </span><span id="blue">62,000 startups, including 100 unicorns by 2025 and students lie in the heart of it.</span></div>
+								
+							</div>
+
+							<div class="page3" id="gif1">
+								<!-- <img src="{{url_for('static', filename='giant_leap.png')}}" id="page4"> -->
+								<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+								<lord-icon
+								    src="https://cdn.lordicon.com/oegrrprk.json"
+								    trigger="loop-on-hover"
+								    colors="primary:#121331,secondary:#646e78,tertiary:#16c79e,quaternary:#4bb3fd"
+								    style="width:50vw;height:50vw">
+								</lord-icon>
+							</div>
+		</div>
+		
+
+	</section>
+
+	<!-- page5 -->
+
+	<section id="page5">
+		
+		<img src="{{url_for('static', filename='page5.png')}}" id="page5">	
+		<div class="page5">
+			<span id="page5"> Which one are you???</span><br>
+			<a href="register.html" id="page5">
+				<div class="page5_button">
+					FIND THE PERFECT PARTNER NOW!!
+				</div>
+			</a>
+		</div>
+
+	</section>
+
+	<!-- page 6 -->
+
+	<section id="page6">
+
+		<div class="page6_container">
+							<div class="page6" id="gif">
+
+								CONNECT<br>
+								<!-- <img src="{{url_for('static', filename='image6.png')}}" id="image6"> -->
+								<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+								<lord-icon
+								    src="https://cdn.lordicon.com/flvisirw.json"
+								    trigger="hover"
+								    colors="primary:#30c9e8,secondary:#4bb3fd,tertiary:#b4b4b4"
+								    style="width:30vw;height:30vw">
+								</lord-icon>
+								
+							</div>
+
+							<div class="page6" id="info">
+
+								<ul>
+									<li><span id="black">-For</span> <span id="blue">18 - 22 year</span> <span id="black">old only.</span></li>
+									<li><span id="blue">-End-to-end</span><span id="black"> networking.</span><br>Hassle-free connection.</li>
+									<li><span id="blue">-Personalized </span><span id="black">recommendations</span><br>Perfect fit for you and your startup! </li>
+									<li><span id="black">-Members' </span><span id="blue">exclusive</span><span id="black">events and a lot more</span><br>Exciting Community for all things new!</li>
+								</ul>
+								
+							</div>
+							<a href="register.html">
+							<div class="page6" id="button4">
+								Register Your Intrest Here
+							</div>
+							</a>
+
+		</div>
+
+	</section>
+
+	<!-- page 7 -->
+
+	<section id="page7">
+
+		<div class="page6_container">
+							<div class="page6" id="gif">
+
+								GROW<br>
+								<!-- <img src="{{url_for('static', filename='gif2.gif')}}" id="gif1"> -->
+								<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+								<lord-icon
+								    src="https://cdn.lordicon.com/oqhlhtfq.json"
+								    trigger="hover"
+								    colors="primary:#0691f8,secondary:#fec269"
+								    style="width:30vw;height:30vw">
+								</lord-icon>
+								
+							</div>
+
+							<div class="page6" id="info">
+
+								<ul>
+									<li><span id="blue">-Mentors:</span><br><span id="black">Industry Experts.</span></li>
+									<li><span id="blue">-Advisors and Legal Aid:</span><br><span id="black">Always here to help.</span></li>
+									<li><span id="blue">-Angel Investors and Venture Capitalists:</span><br><span id="black">Raise your valuation!</span></li>
+								</ul>
+							</div>
+							<a href="register.html">
+							<div class="page6" id="button4">
+								Register Your Intrest Here
+							</div>
+							</a>
+
+		</div>
+
+	</section>
+
+	<!-- page 8 -->
+
+	<section id="page8">
+		<div class="page6_container">
+							<div class="page6" id="gif">
+
+								WHAT'S NEW?
+								<br>
+								<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+								<lord-icon
+								    src="https://cdn.lordicon.com/ugbgnnqc.json"
+								    trigger="hover"
+								    colors="primary:#fec269,secondary:#0691f8"
+								    style="width:30vw;height:30vw">
+								</lord-icon>
+								
+							</div>
+
+							<div class="page6" id="info">
+
+								<ul>
+									<li><span id="blue">-Blockchain Network: </span><br><span id="black">Secure. Trackable. Verifiable.</span></li>
+									<li><span id="blue">-In app chat feature:</span><br><span id="black"> Keep your conversations safe.</span></li>
+									<li><span id="blue">-Verified Users:</span><br><span id="black">Relief from anonymous users and scammers.</span></li>
+								</ul>
+								
+							</div>
+							<a href="register.html">
+							<div class="page6" id="button4">
+								Register Your Intrest Here
+							</div>
+							</a>
+
+		</div>
+	</section>
+
+	<!-- page 9 -->
+
+
+	<section id="page9">
+
+		<imag src="{{url_for('static', filename='image5_1.png')}}" id="image5_1">
+		
+<div class="page9_1">
+
+				<div class="pricing_text">PRICING&ensp;
+				<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+				<lord-icon
+				    src="https://cdn.lordicon.com/qlncusvo.json"
+				    trigger="loop-on-hover"
+				    colors="primary:#0691f8"
+				    state="hover"
+				    style="width:10vw;height:10vw">
+				</lord-icon>
+				<span id="page9_2">Tell Us What You Think Could Be Our Prices...</span>
+				</div>
+				
+</div>
+
+	
+<div >
+<form action = "/php/chaching.php" method = "POST">
+		<div class="pricing_box" id="month_3">
+
+			3<br>months!<br>
+			<input type="number" name="pricing_3" placeholder="3 months" id="pricing_3">
+		</div>
+
+		<div class="pricing_box" id="month_6">
+
+			6<br>months!<br>
+			<input type="number" name="pricing_6" placeholder="6 months" id="pricing_6">
+		</div>
+
+		<div class="pricing_box" id="month_12">
+
+			12<br>months!<br>
+			<input type="number" name="pricing_12" placeholder="12 months" id="pricing_12">
+		</div><br><br>
+			<input type="submit" value="CHA-CHING">
+
+</form>
+</div>
+
+			
+
+			<!-- <div class="page9" id="button">
+				CHA-CHING
+			</div> -->
+		
+
+	</section>
+
+<!-- PAGE 10 -->
+
+	<section id="page10">
+
+		<img src="{{url_for('static', filename='image6_1.png')}}" id="page10">
+
+
+
+	</section>
+
+</div>
+
+
+
+
+
+
+<script>
+	
+	 $('.header a').on('click', function (e) {
+   if (this.hash !== '') {
+     e.preventDefault();
+
+     const hash = this.hash;
+
+     $('html, body')
+       .animate({
+         scrollTop: $(hash).offset().top
+       },800);
+   }
+ });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
